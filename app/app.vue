@@ -21,9 +21,6 @@ useSeoMeta({
   titleTemplate: '%s - Nuxt Portfolio Template',
   twitterCard: 'summary_large_image'
 })
-
-const navigation = ref([])
-const files = ref([])
 </script>
 
 <template>
@@ -33,15 +30,5 @@ const files = ref([])
         <NuxtPage />
       </UMain>
     </NuxtLayout>
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        :navigation="navigation"
-        shortcut="meta_k"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
   </UApp>
 </template>

@@ -18,9 +18,6 @@ useSeoMeta({
   title: 'Page not found',
   description: 'We are sorry but this page could not be found.'
 })
-
-const navigation = ref([])
-const files = ref([])
 </script>
 
 <template>
@@ -36,16 +33,6 @@ const files = ref([])
     </UMain>
 
     <AppFooter />
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        shortcut="meta_k"
-        :navigation="navigation"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
 
     <UToaster />
   </div>
