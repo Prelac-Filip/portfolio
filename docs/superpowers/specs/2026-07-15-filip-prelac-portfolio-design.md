@@ -12,7 +12,7 @@ Transform the Nuxt UI "portfolio" template (currently a fictional designer, "Emm
 - **Page structure:** Home (single-page scroll) + `/about` page + `/projects` page. **Blog and Speaking are removed** entirely (pages, content, nav, components, schema, collections).
 - **Skills section:** Layout **B — by category**, with core strengths tinted and working-experience items shown plain. New section, does not exist in the template.
 - **Hero:** Layout **B — portrait + headline + CTAs**. Achieved by simplifying the existing hero (which is already avatar + title + description + links) and **removing the image marquee**.
-- **Projects:** Mix of personal + professional. Kept on the **dedicated `/projects` page** (template-native pattern), 6 project entries. Content/links provided later → placeholders now.
+- **Projects:** Mix of personal + professional. Kept on the **dedicated `/projects` page** (template-native pattern), 7 project entries. Content/links provided later → placeholders now.
 - **Testimonials:** 4 **real** quotes, provided later → placeholders now, with the 4 author names in place.
 - **FAQ:** Kept but **repurposed away from pricing/services** toward how-I-work / tech / availability.
 - **Accent color:** Keep the template default (currently `primary: 'blue'` in `app.config.ts`). No change unless requested.
@@ -45,9 +45,11 @@ The two Booking Manager roles stack under the same company to make the Junior �
 - **Tools & QA:** Git, Jira, Playwright, QA flows & practices
 - **Leadership:** Team leadership, Mentoring, Sprint planning, Client communication
 
-### Projects (6, placeholders for description/stack/link/image)
+### Projects (7, placeholders for description/stack/link/image)
 
-Booking Manager · Qartora · Scayle · Fitbud · Hala Centar · Serapion web
+Booking Manager · Qartora · Scayle · Fitbud · Hala Centar · Serapion web · **Scoundrel**
+
+**Scoundrel** is a personal game project built in **Godot** with **GDScript** (a single-player card game). Its tech stack (`Godot`, `GDScript`) is known now; description, link, and image still to be provided.
 
 ### Testimonials (4, real quotes later)
 
@@ -109,7 +111,7 @@ This is a content-and-config transformation of a working template. Component log
 
 - `content/blog.yml`, `content/blog/*.md` (4 posts)
 - `content/speaking.yml`
-- `content/projects/{bloom-finance,ecotrack,internal-developer-hub,wavelength-music}.yml` → replaced by 6 new placeholder files (`booking-manager.yml`, `qartora.yml`, `scayle.yml`, `fitbud.yml`, `hala-centar.yml`, `serapion-web.yml`)
+- `content/projects/{bloom-finance,ecotrack,internal-developer-hub,wavelength-music}.yml` → replaced by 7 new files (`booking-manager.yml`, `qartora.yml`, `scayle.yml`, `fitbud.yml`, `hala-centar.yml`, `serapion-web.yml`, `scoundrel.yml`). Scoundrel's `tags` are known (`Godot`, `GDScript`); the rest use placeholder description/link/image.
 - `app/components/landing/Blog.vue`
 - `app/pages/blog/index.vue`, `app/pages/blog/[...slug].vue`
 - `app/pages/speaking.vue`
@@ -117,7 +119,7 @@ This is a content-and-config transformation of a working template. Component log
 ## Placeholders & assets to provide later
 
 - Portrait photo (hero avatar) and CV PDF
-- Project descriptions, tech stacks, links, and card images (6)
+- Project descriptions, tech stacks, links, and card images (7; Scoundrel's tags are already known)
 - Testimonial quotes and each author's role/relationship (4)
 - Company logos/brand colors for Booking Manager & Serapion (fallback: lucide icons + chosen colors until provided)
 - About-page bio refinements + location
@@ -128,7 +130,7 @@ Placeholder projects use a shared placeholder image (e.g. `/projects/placeholder
 
 - `pnpm dev` runs with no content-schema validation errors.
 - `pnpm typecheck` and `pnpm lint` pass.
-- Manual check: homepage renders Hero (no marquee) → About/Experience → Skills → Testimonials → FAQ; `/projects` shows 6 cards; `/about` renders; nav shows Home/Projects/About only; `/blog` and `/speaking` 404; footer + hero social links point to Filip's GitHub/LinkedIn.
+- Manual check: homepage renders Hero (no marquee) → About/Experience → Skills → Testimonials → FAQ; `/projects` shows 7 cards; `/about` renders; nav shows Home/Projects/About only; `/blog` and `/speaking` 404; footer + hero social links point to Filip's GitHub/LinkedIn.
 
 ## Out of scope
 
