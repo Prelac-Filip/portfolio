@@ -110,6 +110,23 @@ export default defineContentConfig({
         content: z.object({}),
         images: z.array(createImageSchema())
       })
+    }),
+    special: defineCollection({
+      type: 'page',
+      source: 'special.yml',
+      schema: createBaseSchema().extend({
+        about: createBaseSchema(),
+        reasons: createBaseSchema().extend({
+          items: z.array(z.object({
+            label: z.string()
+          }))
+        }),
+        special: createBaseSchema(),
+        end: createBaseSchema(),
+        images: z.array(createImageSchema().extend({
+          id: z.number()
+        }))
+      })
     })
   }
 })

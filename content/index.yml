@@ -22,11 +22,10 @@ skills:
           core: true
         - label: Spring
           core: true
-        - label: Jakarta EE
-          core: true
         - label: Laravel
         - label: NestJS
         - label: REST / SOAP
+          core: true
     - title: Frontend & Mobile
       items:
         - label: Vue / Nuxt
@@ -37,6 +36,7 @@ skills:
     - title: Databases
       items:
         - label: PostgreSQL
+          core: true
         - label: MySQL
     - title: Tools & QA
       items:
@@ -60,14 +60,14 @@ experience:
         logo: "i-lucide-code-xml"
         url: "https://serapion.net"
         color: "#3B82F6"
-    - date: "Mar 2024 — Feb 2026"
+    - date: "2024 — 2026"
       position: "Team Lead at"
       company:
         name: Booking Manager
         logo: "i-lucide-ship"
         url: "https://www.booking-manager.com"
         color: "#0EA5E9"
-    - date: "Jul 2022 — Mar 2024"
+    - date: "2022 — 2024"
       position: "Junior Software Developer at"
       company:
         name: Booking Manager
@@ -78,19 +78,19 @@ testimonials:
   - quote: "[Placeholder — real quote to be added.]"
     author:
       name: "Matija Varjačić"
-      description: "[Role — to be added]"
+      description: "Software Developer, ex-colleague"
   - quote: "[Placeholder — real quote to be added.]"
     author:
       name: "Dominik Marčić"
-      description: "[Role — to be added]"
+      description: "Software Developer, ex-colleague"
   - quote: "[Placeholder — real quote to be added.]"
     author:
       name: "Kristijan Vidović"
-      description: "[Role — to be added]"
+      description: "QA Engineer, ex-colleague"
   - quote: "[Placeholder — real quote to be added.]"
     author:
       name: "Alen Dedić"
-      description: "[Role — to be added]"
+      description: "Client & Owner of Hala Centar"
 faq:
   title: Frequently Asked Questions
   description: A bit about how I work and what I'm looking for.
@@ -110,10 +110,13 @@ faq:
       questions:
         - label: What are you strongest in?
           content: |
-            My core strengths are Java (Spring and Jakarta EE) on the backend and Vue/Nuxt and Flutter on the front end. I also have solid working experience with Laravel, React/Next, and Playwright.
+            My core strengths are Java (Spring) on the backend and Vue/Nuxt and Flutter on the front end. I also have solid working experience with Laravel, React/Next, and Playwright.
         - label: What are you currently learning?
           content: |
-            I'm always expanding my stack — most recently through professional work with React, NestJS, and Laravel, and personal projects like a game built in Godot with GDScript.
+            I'm always expanding my stack — most recently through professional work with React, NestJS, and Laravel, and personal projects like a game built in Godot with GDScript. As a software engineer, I know that there is always something new to learn, but with my foundations, I don't shy away from new technologies or architectures.
+        -label: How do you use AI?
+          content: |
+            I use AI as a tool to make my work faster, to read and understand documentation better, and to learn at a more productive pace. I don't rely or blindy trust it, I carefully guide it and make 'spec' files for it to get the bigger picture of what I'm trying to implement, what it would achieve, and the net result overall. It's just another tool in my toolbox! 
     - title: Working together
       questions:
         - label: Are you open to new opportunities?
