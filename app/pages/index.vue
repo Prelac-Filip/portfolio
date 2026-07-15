@@ -10,8 +10,8 @@ if (!page.value) {
   })
 }
 
-const title = page.value?.seo.title || page.value?.title
-const description = page.value?.seo.description || page.value?.description
+const title = page.value?.seo?.title || page.value?.title
+const description = page.value?.seo?.description || page.value?.description
 
 useSeoMeta({
   title,
