@@ -10,13 +10,17 @@ if (!page.value) {
   })
 }
 
+const title = page.value?.seo.title || page.value?.title
+const description = page.value?.seo.description || page.value?.description
+
 useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png'
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description
 })
+
+defineOgImage('Portfolio', { title, description })
 </script>
 
 <template>
