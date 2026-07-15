@@ -37,6 +37,7 @@ const ui = {
     <UTabs
       :items
       orientation="horizontal"
+      :unmount-on-hide="false"
       :ui
     >
       <template #content="{ item }">
@@ -50,9 +51,9 @@ const ui = {
             trailingIcon: 'group-data-[state=closed]:rotate-0 group-data-[state=open]:rotate-135 text-base text-muted'
           }"
         >
-          <template #body="{ item: _item }">
+          <template #body="{ item: question }">
             <MDC
-              :value="_item.content"
+              :value="question.content"
               unwrap="p"
               class="px-4"
             />

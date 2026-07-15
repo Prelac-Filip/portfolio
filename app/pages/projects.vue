@@ -74,7 +74,7 @@ defineOgImage('Portfolio', { title, description })
         <UPageCard
           :title="project.title"
           :description="project.description"
-          :to="project.url"
+          :to="project.url === '#' ? undefined : project.url"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -90,6 +90,7 @@ defineOgImage('Portfolio', { title, description })
           </template>
           <template #footer>
             <ULink
+              v-if="project.url !== '#'"
               :to="project.url"
               class="text-sm text-primary flex items-center"
             >
@@ -99,6 +100,12 @@ defineOgImage('Portfolio', { title, description })
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
               />
             </ULink>
+            <span
+              v-else
+              class="text-sm text-muted"
+            >
+              Coming soon
+            </span>
           </template>
           <img
             :src="project.image"

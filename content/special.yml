@@ -1,0 +1,67 @@
+title: Special place for a special person
+description: A hidden page, dedicated to my favourite person in the whole world, that is my Aisha.
+about:
+  title: About us
+  description: | 
+    We are two cutie pattooties that love eachother very much, even with such limited expewience.
+reasons:
+  title: Why is she the biggest cutie pattootie?
+  description: |
+    Just a few examples of why she is the love of my life:
+  items:
+    - label: Loving
+    - label: Cute
+    - label: Pattoot
+    - label: Full of life
+    - label: Bright smile
+    - label: Takes care of me
+    - label: Endures me
+    - label: Is interested in me
+    - label: Cooks for me
+    - label: Teaches me climbing
+special:
+  title: What makes her really special?
+  description: Even when I'm making the dumbest jokes she laughs at them. When I'm inconsiderate she's always there when I need her. She believes in me and in my dreams. She is hugging, kissing, and massaging me even when she is tired and full of my crap. She is simply the best.
+end:
+  title: I love you, my sweet little snow leopard.
+  description: With the most love, Fićo
+images:
+  - id: 1
+    src: /special/154_4ff1c32f0f425.jpg
+    alt: Aisha
+  - id: 2
+    src: /special/image-2026-06-29T15-10-56-150Z.jpg
+    alt: Aisha
+  - id: 3
+    src: /special/IMG_20260405_150829.jpg
+    alt: Aisha
+  - id: 4
+    src: /special/IMG_20260420_204847.jpg
+    alt: Aisha
+  - id: 5
+    src: /special/IMG_20260523_180137.jpg
+    alt: Aisha
+  - id: 6
+    src: /special/IMG-20260524-WA0023.jpg
+    alt: Aisha
+  - id: 7
+    src: /special/IMG-20260524-WA0038.jpg
+    alt: Aisha
+  - id: 8
+    src: /special/IMG-20260524-WA0041.jpg
+    alt: Aisha
+  - id: 9
+    src: /special/IMG_20260605_161135.jpg
+    alt: Aisha
+  - id: 10
+    src: /special/IMG_20260618_171409_1.jpg
+    alt: Aisha
+  - id: 11
+    src: /special/IMG_20260621_104526.jpg
+    alt: Aisha
+  - id: 12
+    src: /special/IMG-20260622-WA0009.jpg
+    alt: Aisha
+  - id: 13
+    src: /special/MVIMG_20260328_022426.jpg
+    alt: Aisha

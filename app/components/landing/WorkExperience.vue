@@ -24,14 +24,14 @@ defineProps<{
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="text-muted flex items-center text-nowrap gap-2"
+          class="text-muted flex items-center gap-2"
         >
-          <p class="text-sm">
+          <p class="text-sm shrink-0">
             {{ experience.date }}
           </p>
-          <USeparator />
+          <USeparator class="shrink min-w-4" />
           <ULink
-            class="flex items-center gap-1"
+            class="flex flex-wrap items-center justify-end gap-x-1 min-w-0 text-right"
             :to="experience.company.url"
             target="_blank"
           >
@@ -39,7 +39,7 @@ defineProps<{
               {{ experience.position }}
             </span>
             <div
-              class="inline-flex items-center gap-1"
+              class="inline-flex items-center gap-1 whitespace-nowrap"
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
