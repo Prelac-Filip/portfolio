@@ -41,13 +41,23 @@ export default defineContentConfig({
       source: 'index.yml',
       schema: z.object({
         hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
+          links: z.array(createButtonSchema())
         }),
         about: createBaseSchema(),
+        skills: z.object({
+          title: z.string(),
+          description: z.string().optional(),
+          categories: z.array(z.object({
+            title: z.string(),
+            items: z.array(z.object({
+              label: z.string(),
+              core: z.boolean().optional()
+            }))
+          }))
+        }),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
+            date: z.string(),
             position: z.string(),
             company: z.object({
               name: z.string(),
