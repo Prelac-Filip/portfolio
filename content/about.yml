@@ -1,27 +1,25 @@
 title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+description: More about Filip Prelac — a software developer who grew from junior to team lead, working across Java, Vue, Flutter and more.
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Hi, I'm **Filip Prelac**, a software developer who enjoys working across the whole stack — from Java backends to Vue and Flutter front ends.
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  My journey started at **Booking Manager**, where I joined in 2022 as a Junior Software Developer working on a Java backend (Java 8, JSP, Velocity, MySQL, REST and SOAP). Within two years I grew into a **Team Lead** role — mentoring junior developers, organising sprints in Jira, running daily meetings, and communicating directly with clients, while expanding onto the front end with Vue.
 
-  ### My Design Philosophy
+  ### What I do
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  Today I'm a **Mid Software Engineer at Serapion**, working with React, NestJS, Laravel, Playwright and Filament. My core strengths are **Java (Spring & Jakarta EE)** and **Vue/Nuxt and Flutter**, and I'm comfortable jumping into Laravel, React/Next, or Playwright when a project calls for it.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  ### How I work
 
-  ### What Drives Me
+  I care about clean, maintainable code and treat QA as part of development rather than an afterthought. Having led a team, I think about the whole workflow — not just my own tickets — and I enjoy helping other developers grow.
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  ### Beyond work
 
-  ### Beyond the Screen
+  _(Placeholder: location, hobbies, and personal interests — to refine.)_
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
-
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](mailto:prelacfilip@gmail.com).
 images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  - src: /hero/random-1.avif
+    alt: Placeholder image
+  - src: /hero/random-2.avif
+    alt: Placeholder image
