@@ -75,7 +75,7 @@ experience:
         url: "https://www.booking-manager.com"
         color: "#0EA5E9"
 testimonials:
-  - quote: "[Placeholder — real quote to be added.]"
+  - quote: "I worked alongside Filip when he was still a junior, and watching him grow into our Team Lead within two years was something else. He has a rare mix of technical sharpness and genuine care for the people around him - the kind of leader who makes everyone else better just by being in the room,"
     author:
       name: "Matija Varjačić"
       description: "Software Developer, ex-colleague"
@@ -83,11 +83,11 @@ testimonials:
     author:
       name: "Dominik Marčić"
       description: "Software Developer, ex-colleague"
-  - quote: "[Placeholder — real quote to be added.]"
+  - quote: "Working with Filip has had a significant impact on my professional growth, and I would gladly recommend him to anyone looking for someone who combines strong techincal knowledge with excellent leadership, mentoring, and communication skills."
     author:
       name: "Kristijan Vidović"
       description: "QA Engineer, ex-colleague"
-  - quote: "[Placeholder — real quote to be added.]"
+  - quote: "Working with Filip has been a very pleasant experience. He took the initiative and with great interest has recognized our brand and what we plan to achieve. He delivered the product in the agreed period, with all of the specifications he promised us, and has been available for small iterations when we needed them."
     author:
       name: "Alen Dedić"
       description: "Client & Owner of Hala Centar"

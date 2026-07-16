@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="qartoraGradient" x1="20" y1="20" x2="236" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B0DC83"/>
+      <stop offset="100%" stop-color="#6BA950"/>
+    </linearGradient>
+  </defs>
+  <g opacity="0.85">
+    <circle cx="92" cy="116" r="58" fill="url(#qartoraGradient)"/>
+    <path d="M 60 156 L 50 208 L 100 174 Z" fill="url(#qartoraGradient)"/>
+  </g>
+  <circle cx="160" cy="120" r="58" fill="url(#qartoraGradient)"/>
+  <circle cx="160" cy="120" r="30" fill="#FFFFFF"/>
+  <path d="M 182 158 L 212 200 L 228 188 L 198 144 Z" fill="url(#qartoraGradient)"/>
+</svg>

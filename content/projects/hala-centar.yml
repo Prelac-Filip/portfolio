@@ -1,6 +1,6 @@
 title: Hala Centar
-description: "[Placeholder — project description to be added.]"
-image: /projects/placeholder.svg
-url: "#"
-tags: []
-date: 2023-01-01
+description: "A website for a training center made in Nuxt.js. Mostly static, with a few SSR pages for guests to enter wanted plans with their information, and send them to the clients email address. Nuxt.js was used becuase of a planned BE part of the web in the future."
+image: /projects/Hala_centar.png
+url: "https://halacentar.com/"
+tags: [Nuxt.js, Vue.js, Nuxt UI]
+date: 2025-10-15

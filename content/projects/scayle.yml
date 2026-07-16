@@ -1,6 +1,6 @@
-title: Scayle
-description: "[Placeholder — project description to be added.]"
-image: /projects/placeholder.svg
+title: Scayle Middlewares
+description: "Working on several middlewares that are using Scayle. Introducing new features, bugfixing, and script running on the servers"
+image: /projects/SCAYLE.png
 url: "#"
-tags: []
-date: 2025-06-01
+tags: [PHP, Symphony, Laravel]
+date: 2026-02-01

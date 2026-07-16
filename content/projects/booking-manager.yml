@@ -1,6 +1,6 @@
 title: Booking Manager
-description: "[Placeholder — description of my work on Booking Manager to be added.]"
-image: /projects/placeholder.svg
-url: "#"
-tags: []
-date: 2024-01-01
+description: "Developed and maintained various application systems, including REST and SOAP APIs, desktop applications, web apps, and custom client websites. Started leading a team of three developers, structured a QA testing environment for key system features, and designed an automated billing system for existing clients. Afterwards organized sprints and Jira tasks for the whole development department during a new version release. Conducted technical meetings to align implementation design with client requirements for new integrations."
+image: /projects/Booking_manager.jpg
+url: "https://www.booking-manager.com/"
+tags: [Java 8, JSP, Plain JS, Bootstrap 5, Vue.js, REST, SOAP, Testmonitor]
+date: 2022-07-04
