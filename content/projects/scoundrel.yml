@@ -1,7 +1,7 @@
 title: Scoundrel
-description: "A single-player card game built in Godot with GDScript. [Placeholder — expand description and add a link.]"
+description: "A single-player card game built in Godot with GDScript. Made some assets my self using Photoshop and Kenney Shape. Note: it was built for mobile devices, but still functions normally on the web!"
 image: /projects/placeholder.svg
-url: "#"
+url: "https://scoundrel.prelac.dev"
 tags:
   - Godot
   - GDScript
