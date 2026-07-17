@@ -3,7 +3,7 @@ title: Scayle Middlewares
 description: "Working on several middlewares that are using Scayle. Introducing new features, bugfixing, and script running on the servers"
 image: /projects/SCAYLE.png
 url: "#"
-tags: [PHP, Symphony, Laravel]
+tags: [PHP, Symfony, Laravel]
 date: 2026-02-01
 category: Professional
 ---
@@ -18,4 +18,4 @@ category: Professional
 
 ## Stack
 
-Built with PHP, Symphony, Laravel.
+Built with PHP, Symfony, Laravel.
