@@ -53,4 +53,17 @@ test.describe('smoke', () => {
     await expect(homePage.page).toHaveURL('/')
     await expect(homePage.heading).toBeVisible()
   })
+
+  test('theme toggle flips the html color-mode class', async ({ homePage }) => {
+    await homePage.goto()
+    await homePage.expectLoadedClean()
+
+    const before = (await homePage.page.locator('html').getAttribute('class')) ?? ''
+    const wasDark = before.includes('dark')
+
+    const after = await homePage.toggleThemeAndReadHtmlClass()
+
+    // The mode should have flipped.
+    expect(after.includes('dark')).toBe(!wasDark)
+  })
 })
