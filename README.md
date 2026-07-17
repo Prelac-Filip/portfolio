@@ -60,3 +60,25 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## Renovate integration
 
 Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+
+## End-to-end tests
+
+E2E tests use [Playwright](https://playwright.dev) with a Page Object Model and fixtures.
+They run against a production build served by `nuxt preview`.
+
+First-time setup (installs the Chromium browser binary):
+
+```bash
+pnpm exec playwright install chromium
+```
+
+Run the suite:
+
+```bash
+pnpm test:e2e          # headless run (builds + serves automatically)
+pnpm test:e2e:ui       # interactive UI mode
+pnpm test:e2e:report   # open the last HTML report
+```
+
+Tests live in `tests/`: page objects in `tests/pages/`, the fixture in
+`tests/fixtures/`, and specs in `tests/e2e/`.
