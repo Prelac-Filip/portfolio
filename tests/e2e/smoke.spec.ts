@@ -23,6 +23,20 @@ test.describe('smoke', () => {
     await expect(projectsPage.detailLinks.first()).toBeVisible()
   })
 
+  test('opening a project shows its detail page and back button returns to list', async ({ projectsPage, projectDetailPage }) => {
+    await projectsPage.goto()
+    const href = await projectsPage.openFirstProject()
+
+    // href is the project path, e.g. "/projects/qartora"
+    expect(href).toMatch(/^\/projects\/.+/)
+    await expect(projectDetailPage.page).toHaveURL(href)
+    await expect(projectDetailPage.heading).toBeVisible()
+    await expect(projectDetailPage.backToProjects).toBeVisible()
+
+    await projectDetailPage.backToProjects.click()
+    await expect(projectDetailPage.page).toHaveURL('/projects/')
+  })
+
   test('header nav moves between Home, Projects, and About', async ({ homePage }) => {
     await homePage.goto()
     await homePage.expectLoadedClean()
