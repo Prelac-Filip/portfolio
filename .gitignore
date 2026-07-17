@@ -28,3 +28,10 @@ logs
 
 # Brainstorming visual companion
 .superpowers/
+
+.claude/
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
