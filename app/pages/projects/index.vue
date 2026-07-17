@@ -17,7 +17,7 @@ const { data: projects } = await useAsyncData('projects', () => {
 const byCategory = (category: 'Personal' | 'Professional') =>
   (projects.value ?? [])
     .filter(project => project.category === category)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
 const personalProjects = computed(() => byCategory('Personal'))
 const professionalProjects = computed(() => byCategory('Professional'))
