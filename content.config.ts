@@ -62,7 +62,7 @@ export default defineContentConfig({
             company: z.object({
               name: z.string(),
               url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
+              logo: z.string().editor({ input: 'media' }),
               color: z.string()
             })
           }))

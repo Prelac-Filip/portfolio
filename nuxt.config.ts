@@ -22,6 +22,15 @@ export default defineNuxtConfig({
     }
   },
 
+  icon: {
+    customCollections: [
+      {
+        prefix: 'company',
+        dir: './public/logos'
+      }
+    ]
+  },
+
   compatibilityDate: '2026-06-30',
 
   nitro: {
