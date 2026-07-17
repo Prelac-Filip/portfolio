@@ -44,7 +44,7 @@ export class BasePage {
     const before = (await html.getAttribute('class')) ?? ''
     await this.themeToggle.click()
     // Wait until the class attribute actually changes.
-    await expect(html).not.toHaveClass(before)
+    await expect(html).not.toHaveAttribute('class', before)
     return (await html.getAttribute('class')) ?? ''
   }
 }
