@@ -31,6 +31,7 @@ defineOgImage('Portfolio', { title, description })
     <UPageHero
       :title="project.title"
       :description="project.description"
+      orientation="horizontal"
       :ui="{
         title: 'mx-0! text-left',
         description: 'mx-0! text-left',
@@ -55,17 +56,17 @@ defineOgImage('Portfolio', { title, description })
           />
         </div>
       </template>
+      <img
+        :src="project.image"
+        :alt="project.title"
+        class="object-cover w-full max-h-96 rounded-lg"
+      >
     </UPageHero>
     <UPageSection
       :ui="{
         container: 'pt-0!'
       }"
     >
-      <img
-        :src="project.image"
-        :alt="project.title"
-        class="object-cover w-full max-h-96 rounded-lg mb-8"
-      >
       <div
         v-if="project.tags?.length"
         class="flex flex-wrap gap-2 mb-8"
