@@ -7,7 +7,7 @@ export class ProjectsPage extends BasePage {
   constructor(page: Page) {
     super(page)
     // ProjectCard renders a ULink with visible text "View details" per project.
-    this.detailLinks = page.getByRole('link', { name: 'View details' })
+    this.detailLinks = page.getByRole('link', { name: 'View details', exact: true })
   }
 
   async goto() {
