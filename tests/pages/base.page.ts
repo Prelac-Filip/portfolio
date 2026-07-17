@@ -25,11 +25,12 @@ export class BasePage {
     await this.page.goto(path)
   }
 
-  /** Every in-scope page has a visible, non-empty <h1>. The error page does not render
-   *  the page's real hero, so this doubles as an "error page not shown" guard. */
+  /** Assert an in-scope page rendered: a visible, non-empty <h1>, and NOT the
+   *  Nuxt error page (error.vue renders a "Page not found: …" heading via UError). */
   async expectLoadedClean() {
     await expect(this.heading).toBeVisible()
     await expect(this.heading).not.toHaveText('')
+    await expect(this.page.getByText(/not found/i)).toHaveCount(0)
   }
 
   async expectChromeVisible() {
