@@ -22,4 +22,21 @@ test.describe('smoke', () => {
     await expect(projectsPage.page).toHaveURL('/projects/')
     await expect(projectsPage.detailLinks.first()).toBeVisible()
   })
+
+  test('header nav moves between Home, Projects, and About', async ({ homePage }) => {
+    await homePage.goto()
+    await homePage.expectLoadedClean()
+
+    await homePage.navProjects.click()
+    await expect(homePage.page).toHaveURL('/projects/')
+    await expect(homePage.heading).toBeVisible()
+
+    await homePage.navAbout.click()
+    await expect(homePage.page).toHaveURL('/about')
+    await expect(homePage.heading).toBeVisible()
+
+    await homePage.navHome.click()
+    await expect(homePage.page).toHaveURL('/')
+    await expect(homePage.heading).toBeVisible()
+  })
 })
