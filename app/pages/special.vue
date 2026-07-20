@@ -12,7 +12,7 @@ if (!page.value) {
 
 const usedImageIds = [1, 2, 3, 5]
 const carouselImages = computed(() =>
-  page.value?.images.filter((image) => !usedImageIds.includes(image.id)) ?? []
+  page.value?.images.filter(image => !usedImageIds.includes(image.id)) ?? []
 )
 </script>
 

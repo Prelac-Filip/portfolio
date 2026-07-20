@@ -42,6 +42,15 @@ export default defineNuxtConfig({
     }
   },
 
+  icon: {
+    customCollections: [
+      {
+        prefix: 'company',
+        dir: './public/logos'
+      }
+    ]
+  },
+
   ogImage: {
     zeroRuntime: true
   }

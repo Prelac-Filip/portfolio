@@ -2,7 +2,7 @@ seo:
   title: "Filip Prelac - Software Developer"
   description: "Filip Prelac — software developer and former team lead. Java (Spring & Jakarta EE), Vue/Nuxt and Flutter, plus Laravel, React/Next and Playwright. Building backends and apps, and leading teams."
 title: "Hey, I'm Filip Prelac, Software Developer"
-description: "I build across the whole stack — Java backends, Vue/Nuxt and Flutter apps — and I've led a team through it. Focused on clean code, solid QA, and shipping things that work."
+description: "I build across the whole stack — Java backends, Vue/Nuxt and Flutter apps — and I've led a team through it. Focused on clean code, solid QA, and shipping things that work (like this self-hosted portfolio page with my other personal projects on it as well)."
 hero:
   links:
     - label: "Get in touch"
@@ -57,23 +57,23 @@ experience:
       position: "Mid Software Engineer at"
       company:
         name: Serapion
-        logo: "i-lucide-code-xml"
+        logo: "i-company-serapion-logo-scaled"
         url: "https://serapion.net"
-        color: "#3B82F6"
+        color: "#245697"
     - date: "2024 — 2026"
       position: "Team Lead at"
       company:
         name: Booking Manager
-        logo: "i-lucide-ship"
+        logo: "i-company-mmk-logo"
         url: "https://www.booking-manager.com"
-        color: "#0EA5E9"
+        color: "#bc3139"
     - date: "2022 — 2024"
       position: "Junior Software Developer at"
       company:
         name: Booking Manager
-        logo: "i-lucide-ship"
+        logo: "i-company-mmk-logo"
         url: "https://www.booking-manager.com"
-        color: "#0EA5E9"
+        color: "#bc3139"
 testimonials:
   - quote: "I worked alongside Filip when he was still a junior, and watching him grow into our Team Lead within two years was something else. He has a rare mix of technical sharpness and genuine care for the people around him - the kind of leader who makes everyone else better just by being in the room,"
     author:
