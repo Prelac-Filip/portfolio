@@ -4,7 +4,7 @@
 
 Use this template to create your own portfolio with [Nuxt UI](https://ui.nuxt.com).
 
-- [Live demo](https://portfolio-template.nuxt.dev/)
+- [Live demo](https://prelac.dev/)
 - [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
 
 <a href="https://portfolio-template.nuxt.dev/" target="_blank">
@@ -20,10 +20,6 @@ Use this template to create your own portfolio with [Nuxt UI](https://ui.nuxt.co
 ```bash [Terminal]
 npm create nuxt@latest -- -t ui/portfolio
 ```
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=portfolio&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fportfolio&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fportfolio-dark.png&demo-url=https%3A%2F%2Fportfolio-template.nuxt.dev%2F&demo-title=Nuxt%20Portfolio%20Template&demo-description=A%20sleek%20portfolio%20template%20to%20showcase%20your%20work%2C%20skills%20and%20blog%20powered%20by%20Nuxt%20Content.)
 
 ## Setup
 
@@ -55,8 +51,26 @@ Locally preview production build:
 pnpm preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+**Deployment** is currently done on a self-hosted server. For further information, reach out to the project owner.
 
-## Renovate integration
+## End-to-end tests
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+E2E tests use [Playwright](https://playwright.dev) with a Page Object Model and fixtures.
+They run against a production build served by `nuxt preview`.
+
+First-time setup (installs the Chromium browser binary):
+
+```bash
+pnpm exec playwright install chromium
+```
+
+Run the suite:
+
+```bash
+pnpm test:e2e          # headless run (builds + serves automatically)
+pnpm test:e2e:ui       # interactive UI mode
+pnpm test:e2e:report   # open the last HTML report
+```
+
+Tests live in `tests/`: page objects in `tests/pages/`, the fixture in
+`tests/fixtures/`, and specs in `tests/e2e/`.
