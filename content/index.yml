@@ -22,10 +22,10 @@ skills:
           core: true
         - label: Spring
           core: true
-        - label: Laravel
-        - label: NestJS
         - label: REST / SOAP
           core: true
+        - label: Laravel
+        - label: NestJS
     - title: Frontend & Mobile
       items:
         - label: Vue / Nuxt
@@ -41,15 +41,19 @@ skills:
     - title: Tools & QA
       items:
         - label: Git
+          core: true
         - label: Jira
-        - label: Playwright
+          core: true
         - label: QA flows & practices
+        - label: Playwright
     - title: Leadership
       items:
         - label: Team leadership
-        - label: Mentoring
-        - label: Sprint planning
+          core: true
         - label: Client communication
+          core: true
+        - label: Sprint planning
+        - label: Mentoring
 experience:
   title: Work Experience
   items:
@@ -74,12 +78,14 @@ experience:
         logo: "i-company-mmk-logo"
         url: "https://www.booking-manager.com"
         color: "#bc3139"
+  contribution:
+    title: What I bring to the table?
 testimonials:
-  - quote: "I worked alongside Filip when he was still a junior, and watching him grow into our Team Lead within two years was something else. He has a rare mix of technical sharpness and genuine care for the people around him - the kind of leader who makes everyone else better just by being in the room,"
+  - quote: "I worked alongside Filip when he was still a junior, and watching him grow into our Team Lead within two years was something else. He has a rare mix of technical sharpness and genuine care for the people around him - the kind of leader who makes everyone else better just by being in the room."
     author:
       name: "Matija Varjačić"
       description: "Software Developer, ex-colleague"
-  - quote: "[Placeholder — real quote to be added.]"
+  - quote: "I had the pleasure of working with Filip for several years, and it was a truly positive experience. He was an outstanding Team Lead who always knew how to guide the team while creating a supportive and collaborative environment. He explains complex topics in a clear and approachable way, for both techincal and business requirements. I would gladly recommend him to anyone looking for a skilled leader, excellent communicator and supportive teammate."
     author:
       name: "Dominik Marčić"
       description: "Software Developer, ex-colleague"
@@ -114,7 +120,7 @@ faq:
         - label: What are you currently learning?
           content: |
             I'm always expanding my stack — most recently through professional work with React, NestJS, and Laravel, and personal projects like a game built in Godot with GDScript. As a software engineer, I know that there is always something new to learn, but with my foundations, I don't shy away from new technologies or architectures.
-        -label: How do you use AI?
+        - label: How do you use AI?
           content: |
             I use AI as a tool to make my work faster, to read and understand documentation better, and to learn at a more productive pace. I don't rely or blindy trust it, I carefully guide it and make 'spec' files for it to get the bigger picture of what I'm trying to implement, what it would achieve, and the net result overall. It's just another tool in my toolbox! 
     - title: Working together
@@ -124,4 +130,4 @@ faq:
             Yes — I'm open to interesting roles and projects. The quickest way to reach me is by email or on LinkedIn.
         - label: Where are you based and do you work remotely?
           content: |
-            [Placeholder — location and remote/on-site preference to be added.]
+            I am based in Zagreb, Croatia, and I'm open to a hybrid work approach, as well as a remote one. 

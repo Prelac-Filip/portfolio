@@ -35,9 +35,24 @@ defineOgImage('Portfolio', { title, description })
       :ui="{
         title: 'mx-0! text-left',
         description: 'mx-0! text-left',
-        links: 'justify-start'
+        links: 'justify-start',
+        container: 'pb-0!',
       }"
     >
+      <template #headline>
+        <div
+        v-if="project.tags?.length"
+        class="flex gap-2"
+        >
+          <UBadge
+            v-for="tag in project.tags"
+            :key="tag"
+            :label="tag"
+            variant="subtle"
+            color="primary"
+          />
+        </div>
+      </template>
       <template #links>
         <div class="flex items-center gap-2">
           <UButton
@@ -67,18 +82,6 @@ defineOgImage('Portfolio', { title, description })
         container: 'pt-0!'
       }"
     >
-      <div
-        v-if="project.tags?.length"
-        class="flex flex-wrap gap-2 mb-8"
-      >
-        <UBadge
-          v-for="tag in project.tags"
-          :key="tag"
-          :label="tag"
-          variant="subtle"
-          color="neutral"
-        />
-      </div>
       <ContentRenderer
         :value="project"
         class="prose prose-primary dark:prose-invert max-w-none"
