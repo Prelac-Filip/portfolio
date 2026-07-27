@@ -129,6 +129,9 @@ faq:
         - label: Are you open to new opportunities?
           content: |
             Yes — I'm open to interesting roles and projects. The quickest way to reach me is by email or on LinkedIn.
+        - label: What kind of work are you looking for?
+          content: |
+            I'm open for a variety of different roles, such as a Software Engineer, Team Lead with a focus of leading and coordinating the team, or as a Technical Project Manager. Even though my journey started as a developer, I want to use my soft-skills to charge a product/project into success!
         - label: Where are you based and do you work remotely?
           content: |
             I am based in Zagreb, Croatia, and I'm open to a hybrid work approach, as well as a remote one. 

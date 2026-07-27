@@ -65,6 +65,7 @@ defineOgImage('Portfolio', { title, description })
           />
         </div>
       </template>
+      <LazyStarsBg />
     </UPageHero>
     <UPageSection
       title="Personal"
