@@ -27,7 +27,9 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/'
+        '/',
+        // Linked from the game and the Play Console: always built, even if nothing links to it.
+        '/projects/pirate-king/privacy'
       ],
       crawlLinks: true
     }

@@ -24,6 +24,14 @@ useSeoMeta({
 })
 
 defineOgImage('Portfolio', { title, description })
+
+// Browsers only autoplay muted video; `playlist` set to the same id is what makes YouTube loop it.
+const videoSrc = computed(() => {
+  const id = project.value?.video
+  return id
+    ? `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&playsinline=1&rel=0`
+    : undefined
+})
 </script>
 
 <template>
@@ -36,13 +44,13 @@ defineOgImage('Portfolio', { title, description })
         title: 'mx-0! text-left',
         description: 'mx-0! text-left',
         links: 'justify-start',
-        container: 'pb-0!',
+        container: 'pb-0!'
       }"
     >
       <template #headline>
         <div
-        v-if="project.tags?.length"
-        class="flex gap-2"
+          v-if="project.tags?.length"
+          class="flex gap-2"
         >
           <UBadge
             v-for="tag in project.tags"
@@ -71,7 +79,17 @@ defineOgImage('Portfolio', { title, description })
           />
         </div>
       </template>
+      <iframe
+        v-if="videoSrc"
+        :src="videoSrc"
+        :title="`${project.title} trailer`"
+        class="w-full aspect-video rounded-lg"
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      />
       <img
+        v-else
         :src="project.image"
         :alt="project.title"
         class="object-cover w-full max-h-96 rounded-lg"

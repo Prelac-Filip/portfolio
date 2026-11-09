@@ -92,7 +92,19 @@ export default defineContentConfig({
         url: z.string().nonempty(),
         tags: z.array(z.string()),
         date: z.date(),
-        category: z.enum(['Personal', 'Professional'])
+        category: z.enum(['Personal', 'Professional']),
+        // A YouTube video id. When set, the detail page plays it (muted, looping) in place of the image.
+        video: z.string().optional()
+      })
+    }),
+    // A project's privacy policy, e.g. content/projects/pirate-king/privacy.md at /projects/pirate-king/privacy.
+    privacy: defineCollection({
+      type: 'page',
+      source: 'projects/*/privacy.md',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        updated: z.date()
       })
     }),
     pages: defineCollection({

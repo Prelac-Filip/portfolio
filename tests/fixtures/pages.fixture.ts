@@ -3,12 +3,14 @@ import { HomePage } from '../pages/home.page'
 import { AboutPage } from '../pages/about.page'
 import { ProjectsPage } from '../pages/projects.page'
 import { ProjectDetailPage } from '../pages/project-detail.page'
+import { PrivacyPage } from '../pages/privacy.page'
 
 type Pages = {
   homePage: HomePage
   aboutPage: AboutPage
   projectsPage: ProjectsPage
   projectDetailPage: ProjectDetailPage
+  privacyPage: PrivacyPage
 }
 
 export const test = base.extend<Pages>({
@@ -23,6 +25,9 @@ export const test = base.extend<Pages>({
   },
   projectDetailPage: async ({ page }, use) => {
     await use(new ProjectDetailPage(page))
+  },
+  privacyPage: async ({ page }, use) => {
+    await use(new PrivacyPage(page))
   }
 })
 
